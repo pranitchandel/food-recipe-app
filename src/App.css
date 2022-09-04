@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+.loadingContainer {
+  position: absolute;
+  width: 95%;
+  height: 90%;
+  z-index: 1;
+}
+
+.loadingClass {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  translate: transform(-50%, -50%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border: 10px solid #f3f3f3;
+  border: 10px solid rgba(122, 123, 124, 0.8);
+  border-top: 10px solid black;
+  align-items: center;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  0% {
+    transform: rotate(0deg);
+  }
+}
